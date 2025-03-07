@@ -1,0 +1,142 @@
+
+//------------------------------------- Header BG-Color Radiant Orange CSS -----------------------------------------
+.header-background-color {
+    -fx-background-color: linear-gradient(from 0% 0% to 100% 0%, #ff7b1d, #eb5904);
+}
+
+
+//------------------------------------- Borderless Menu-Buttons CSS ------------------------------------------------
+.borderless-menu-button .context-menu .menu-item:focused {
+    -fx-background-color: rgba(128, 128, 128, 0.3); // opaque gray background for the item-menu when focused
+    -fx-background-radius: 5;
+}
+.borderless-menu-button .context-menu .menu-item:hover {
+    -fx-background-color: rgba(128, 128, 128, 0.3); // opaque gray background for the item-menu when hover over it
+    -fx-background-radius: 5;
+}
+
+.borderless-menu-button .context-menu .menu-item {
+    -fx-background-color: rgba(255, 255, 255, 0.3);
+    -fx-text-fill: #000000; // text color of the item menu
+    -fx-font-size: 10px
+    //-fx-padding: 10 0 10 0; // Adjust the 1st and 3rd value to change the distance
+}
+
+.borderless-menu-button .context-menu {
+    -fx-background-color: rgba(255, 255, 255, 0.3); // opaque white background for the dropdown
+    -fx-background-radius: 10 // radius of the rounded corners
+}
+
+.borderless-menu-button .arrow-button {
+    -fx-background-color: transparent;
+}
+
+.borderless-menu-button .arrow {
+    -fx-background-color: #ffffff;
+}
+
+.borderless-menu-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent;
+
+}
+
+
+//------------------------------------- Rounded Label CSS ------------------------------------------------
+.rounded-label-small {
+    -fx-background-color:  #fc8d42;
+    -fx-padding: 2 5 2 5;
+    -fx-border-radius: 5;
+    -fx-background-radius: 20;
+}
+
+.rounded-label {
+    -fx-background-color:  #fc8d42;
+    -fx-padding: 5 5 5 5;
+    -fx-border-radius: 5;
+    -fx-background-radius: 20;
+}
+
+.hoverable-label:hover {
+    -fx-underline: true;
+}
+
+.hoverable-label-change-bgcolor: hover {
+    -fx-background-color:  #fc8d42;
+}
+
+.change-bgcolor-upon-clicked-label: clicked {
+    -fx-background-color:  #fc8d42;
+}
+
+#customLabel{
+    -fx-background-color:  #ffffff;
+}
+
+#customLabel:hover {
+    -fx-background-color:  #fc8d42;
+}
+
+.custom-button{
+    -fx-background-color:  #ffffff;
+}
+
+.custom-button:hover {
+    -fx-background-color:  #fc8d42;
+
+}
+
+//----------------------------------------- NAVBAR CSS -----------------------------------------
+
+//this is for navbar not focused
+#customButton{
+    -fx-background-color:  #ffffff;
+}
+
+
+//this is for navbar focused
+#custom-button-focused {
+    -fx-text-fill: white;
+    -fx-background-color:
+            linear-gradient(from 0% 0% to 100% 0%, #fc8d42, #eb5904);
+    -fx-background-radius: 0 20 20 0;
+}
+
+//this is for navbar hover
+#customButton:hover {
+    -fx-background-color:
+            linear-gradient(from 0% 0% to 100% 0%, #fc8d4279, #eb590479);
+    -fx-background-radius: 0 20 20 0;
+}
+
+
+
+//-------------------------------------- SEARCH TEXTFIELD CSS -------------------------------------
+.search-text-field {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 0;
+}
+
+.search-text-field: focused {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-padding: 0;
+}
+
+.search-text-field .text {
+    -fx-border-color: black;
+    -fx-border-width: 0 0 1 0;
+    -fx-padding: 0;
+}
+
+
+//-------------------------------------- content-scrollpane CSS -------------------------------------
+.content-scrollpane: focused {
+    -fx-background-color: transparent;
+    -fx-background-insets: 0;
+    -fx-background-radius: 0;
+    -fx-box-border: transparent;
+}

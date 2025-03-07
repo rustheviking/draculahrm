@@ -1,6 +1,8 @@
 package com.virusoft.draculahrm.model.auth;
 
 import com.virusoft.draculahrm.model.base.BaseEntity;
+import com.virusoft.draculahrm.model.pim.employee.Employee;
+
 import javax.persistence.*;
 
 @Entity
@@ -16,11 +18,16 @@ public class User extends BaseEntity {
     @Column(nullable = false)
     private String role; // "Admin" or "Employee"
 
+    @OneToOne
+    @JoinColumn(name = "employee_id", unique = true, nullable = false)
+    private Employee employee;
+
     public User() {}
 
     public User(String username, String password, String role) {
         this.username = username;
         this.password = password;
+        this.role = role;
     }
 
     // Getters and Setters
