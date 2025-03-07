@@ -40,9 +40,24 @@ public class Employee extends BaseEntity {
     @OneToOne(mappedBy = "employee", cascade = CascadeType.ALL)
     private User user;
 
+    public Employee(String firstName, String lastName, String phoneNumber, String email, Department department, Position position, Date hireDate) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.phoneNumber = phoneNumber;
+        this.email = email;
+        this.department = department;
+        this.position = position;
+        this.hireDate = hireDate;
+    }
 
     // Default Constructor
     public Employee() {}
+
+    public Employee(String firstName, String lastName, Department department) {
+        this.firstName = firstName;
+        this.lastName = lastName;
+        this.department = department;
+    }
 
     public String getFirstName() {
         return firstName;

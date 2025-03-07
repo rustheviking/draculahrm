@@ -7,7 +7,7 @@ import javax.persistence.Table;
 @Entity
 @Table(name = "departments")
 public class Department extends BaseEntity{
-    @Column(unique = true, nullable = false)
+    @Column(name = "name", unique = true, nullable = false)
     private  String name; // Example: "IT", "HR", "Finance"
 
     public Department(){}
@@ -23,4 +23,10 @@ public class Department extends BaseEntity{
     public void setName(String name) {
         this.name = name;
     }
+
+    @Override
+    public String toString() {
+        return name;  // Ensures the ComboBox displays department names
+    }
+
 }
